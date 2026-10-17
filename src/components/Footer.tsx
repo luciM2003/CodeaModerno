@@ -9,9 +9,9 @@ export default function Footer() {
 
       <div className="relative max-w-[1240px] mx-auto px-6 md:px-8 pt-16 md:pt-24">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
-          <div className="md:col-span-7">
+          <div className="md:col-span-12 lg:col-span-7">
             <p className="text-sm uppercase tracking-[0.25em] text-white/40">¿Tenés un proyecto en mente?</p>
-            <a href="mailto:hola@codea.com.ar" className="group mt-4 inline-flex items-center gap-4 text-4xl sm:text-5xl md:text-6xl font-bold tracking-[-0.04em] break-all">
+            <a href="mailto:hola@codea.com.ar" className="group mt-4 inline-flex items-center gap-4 text-[2.1rem] sm:text-5xl lg:text-6xl font-bold tracking-[-0.04em] whitespace-nowrap">
               hola@codea.com.ar
               <span className="hidden sm:flex w-14 h-14 rounded-full items-center justify-center text-black transition-transform group-hover:rotate-[-45deg]" style={{ backgroundColor: LIME }}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
@@ -34,7 +34,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="md:col-span-5 grid grid-cols-2 gap-8 md:justify-items-end">
+          <div className="md:col-span-12 lg:col-span-5 grid grid-cols-2 gap-8 lg:justify-items-end">
             <div className="flex flex-col gap-3">
               <span className="text-xs uppercase tracking-[0.2em] text-white/40 mb-1">Menú</span>
               <Link href="/" className="text-white/70 hover:text-white transition-colors">Inicio</Link>

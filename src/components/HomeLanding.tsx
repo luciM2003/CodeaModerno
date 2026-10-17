@@ -316,7 +316,7 @@ export default function HomeLanding() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/50 to-black/80" />
         <div className="absolute inset-0 opacity-[0.07] mix-blend-overlay pointer-events-none" style={{ backgroundImage: grain }} />
 
-        <Floor cols={heroCols} className="inset-x-0 bottom-0 h-[56%]" wrapClassName="left-[30%] md:left-[26%] top-[34%]" />
+        <Floor cols={heroCols} className="inset-x-0 bottom-0 h-[46%] lg:h-[50%] [@media(min-height:950px)]:h-[56%]" wrapClassName="left-[30%] md:left-[26%] top-[30%]" />
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-[#050505] pointer-events-none" />
 
         <div data-hero-copy className="relative z-10 h-full flex flex-col items-center text-center pt-32 md:pt-40 px-5">
@@ -421,7 +421,8 @@ export default function HomeLanding() {
       <section id="proyectos" className="relative scroll-mt-20 pt-20 md:pt-28">
         <div data-lift="" className="relative h-[880px] md:h-[1000px] overflow-hidden">
           <Floor cols={projectCols} className="inset-0" wrapClassName="left-[45%] top-[18%]" />
-          <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(90deg, rgba(5,5,5,0.95) 0%, rgba(5,5,5,0.75) 32%, rgba(5,5,5,0) 62%)" }} />
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(90deg, rgba(5,5,5,0.97) 0%, rgba(5,5,5,0.85) 40%, rgba(5,5,5,0) 70%)" }} />
+          <div className="xl:hidden absolute inset-0 bg-[#050505]/70 pointer-events-none" />
           <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-[#050505] to-transparent pointer-events-none" />
           <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[#050505] to-transparent pointer-events-none" />
           <div data-reveal className="relative z-10 h-full max-w-[1280px] mx-auto px-5 md:px-8 flex flex-col justify-center">
