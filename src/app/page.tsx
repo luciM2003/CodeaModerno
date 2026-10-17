@@ -1,15 +1,7 @@
-import dynamic from "next/dynamic";
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Gallery from "@/components/Gallery";
+import HomeLanding from "@/components/HomeLanding";
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
-
-// Carga lazy de secciones below-the-fold para reducir el JS inicial
-const Clients = dynamic(() => import("@/components/Clients"));
-const Process = dynamic(() => import("@/components/Process"));
-const Tools = dynamic(() => import("@/components/Tools"));
-const LetsCode = dynamic(() => import("@/components/LetsCode"));
 
 export const metadata: Metadata = {
   alternates: {
@@ -66,23 +58,16 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black overflow-x-hidden">
+    <div className="min-h-screen bg-[#050505] text-white font-sans overflow-x-hidden">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
       <main className="w-full">
-        <Hero />
-        <div className="relative z-20">
-          <Gallery />
-        </div>
-        <Clients />
-        <Process />
-        <Tools />
-        <LetsCode />
-        <Footer />
+        <HomeLanding />
       </main>
+      <Footer />
     </div>
   );
 }
